@@ -83,7 +83,7 @@
             top: 0;
             bottom: 0;
             left: 0;
-            width: 12px;
+            width: 11px;
             background: linear-gradient(90deg, 
                 rgba(255,255,255,0.35) 0%, 
                 rgba(16,37,41,0.12) 38%, 
@@ -96,10 +96,6 @@
         .book-card:hover .typo-book {
             transform: translateY(-6px);
             box-shadow: 12px 18px 34px -8px rgba(23, 52, 58, 0.20), 4px 6px 12px -3px rgba(23, 52, 58, 0.08);
-        }
-
-        .grayscale-editorial {
-            filter: grayscale(100%) contrast(110%);
         }
 
         ::-webkit-scrollbar {
@@ -120,8 +116,8 @@
 <body class="antialiased selection:bg-ochre-200 selection:text-ink-950">
 
     <!-- Top Announcement Bar (Light & Warm) -->
-    <div class="bg-canvas-cream border-b border-canvas-line text-xs py-3 px-5">
-        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-2.5 text-center">
+    <div class="bg-canvas-cream border-b border-canvas-line text-xs py-3 px-4 sm:px-6">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-2.5 text-center">
             <span class="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-ochre-100 border border-ochre-200 text-ochre-700 font-semibold tracking-wide uppercase text-[10px]">
                 <span class="w-1.5 h-1.5 rounded-full bg-ochre-500"></span>
                 Segera Terbit • Pustaka Imam Asy Syafii
@@ -135,7 +131,7 @@
 
     <!-- Sticky Airy Navbar -->
     <header class="sticky top-0 z-40 bg-canvas-light/90 backdrop-blur-md border-b border-canvas-line/80">
-        <div class="max-w-6xl mx-auto px-6 sm:px-10 py-5 flex items-center justify-between">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-10 py-5 flex items-center justify-between">
             <!-- Typographic Brand Logo -->
             <a href="#" class="flex items-center gap-3">
                 <span class="font-display text-2xl sm:text-3xl tracking-tight text-ink-950">
@@ -163,95 +159,48 @@
         </div>
     </header>
 
-    <!-- HERO SECTION: Bright, Sunlit & Spacious -->
+    <!-- HERO SECTION: Clean, Airy & Centered (Tanpa Duplikasi Kartu Buku) -->
     <section class="relative overflow-hidden bg-gradient-to-b from-canvas-cream/70 via-canvas-light to-canvas-light pt-16 pb-20 md:pt-24 md:pb-28 border-b border-canvas-line/70">
         <!-- Soft Sunlit Ambient Glows -->
         <div class="absolute top-0 right-1/4 w-[28rem] h-[28rem] rounded-full bg-ochre-100/70 blur-3xl pointer-events-none"></div>
         <div class="absolute bottom-0 left-1/4 w-[26rem] h-[26rem] rounded-full bg-sage-100/80 blur-3xl pointer-events-none"></div>
 
-        <div class="max-w-6xl mx-auto px-6 sm:px-10 relative z-10">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-14 lg:gap-16 items-center">
-                <!-- Left Copy -->
-                <div class="lg:col-span-7 space-y-7">
-                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-canvas-line text-ochre-700 text-xs font-semibold tracking-wide shadow-sm">
-                        <span>Rak Bacaan & Naskah Pilihan</span>
-                    </div>
+        <div class="max-w-4xl mx-auto px-5 sm:px-10 relative z-10 text-center space-y-7">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-canvas-line text-ochre-700 text-xs font-semibold tracking-wide shadow-sm">
+                <span>Rak Bacaan & Naskah Pilihan</span>
+            </div>
 
-                    <h1 class="font-display text-4xl sm:text-5xl lg:text-[3.5rem] leading-[1.15] text-ink-950 font-normal">
-                        Kadang, yang kamu butuhkan bukan nasihat panjang—melainkan <span class="italic text-ochre-600">satu buku</span> yang mengerti rasanya berada di posisimu.
-                    </h1>
+            <h1 class="font-display text-4xl sm:text-5xl lg:text-[3.75rem] leading-[1.15] text-ink-950 font-normal">
+                Kadang, yang kamu butuhkan bukan nasihat panjang—melainkan <span class="italic text-ochre-600">satu buku</span> yang mengerti rasanya berada di posisimu.
+            </h1>
 
-                    <p class="text-ink-700 text-base sm:text-lg leading-[1.8] max-w-2xl font-normal">
-                        Selamat datang di ruang baca karya <strong class="text-ink-950 font-semibold">Ghifara Poetra</strong>. Mulai dari panduan menjaga ketegasan tanpa kehilangan adab, bekal melewati masa-masa sunyi, hingga kisah perjalanan yang mengajakmu menarik napas sejenak—semua tersusun rapi untuk kamu pilih sesuai kebutuhan hari ini.
-                    </p>
+            <p class="text-ink-700 text-base sm:text-lg leading-[1.85] max-w-2xl mx-auto font-normal">
+                Selamat datang di ruang baca karya <strong class="text-ink-950 font-semibold">Ghifara Poetra</strong>. Mulai dari panduan menjaga ketegasan tanpa kehilangan adab, bekal melewati masa-masa sunyi, hingga kisah perjalanan yang mengajakmu menarik napas sejenak—semua tersusun rapi untuk kamu pilih sesuai kebutuhan hari ini.
+            </p>
 
-                    <div class="flex flex-col sm:flex-row gap-4 pt-2">
-                        <a href="#katalog-lengkap" class="inline-flex items-center justify-center gap-2 bg-ink-900 hover:bg-ink-950 text-white font-semibold px-8 py-4 rounded-2xl transition shadow-airy text-sm">
-                            <span>Jelajahi 8 Katalog Buku</span>
-                            <span>↓</span>
-                        </a>
-                        <a href="#fase-kamu" class="inline-flex items-center justify-center gap-2 bg-white hover:bg-canvas-cream border border-canvas-line text-ink-900 font-semibold px-8 py-4 rounded-2xl transition text-sm">
-                            <span>Bantu Pilihkan Bacaan untuk Kamu</span>
-                        </a>
-                    </div>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
+                <a href="#katalog-lengkap" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-ink-900 hover:bg-ink-950 text-white font-semibold px-8 py-4 rounded-2xl transition shadow-airy text-sm">
+                    <span>Jelajahi 8 Katalog Buku</span>
+                    <span>↓</span>
+                </a>
+                <a href="#fase-kamu" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-canvas-cream border border-canvas-line text-ink-900 font-semibold px-8 py-4 rounded-2xl transition text-sm">
+                    <span>Bantu Pilihkan Bacaan untuk Kamu</span>
+                </a>
+            </div>
 
-                    <!-- Airy Metrics -->
-                    <div class="grid grid-cols-3 gap-6 pt-8 border-t border-canvas-line max-w-lg">
-                        <div>
-                            <p class="font-display text-3xl text-ink-950">8 Karya</p>
-                            <p class="text-xs text-ink-500 mt-1">Cetak, E-Book & Prosa</p>
-                        </div>
-                        <div>
-                            <p class="font-display text-3xl text-ochre-600">5 Gratis</p>
-                            <p class="text-xs text-ink-500 mt-1">Langsung Bisa Kamu Baca</p>
-                        </div>
-                        <div>
-                            <p class="font-display text-3xl text-ink-950">100%</p>
-                            <p class="text-xs text-ink-500 mt-1">Akses Resmi & Praktis</p>
-                        </div>
-                    </div>
+            <!-- Airy Metrics -->
+            <div class="grid grid-cols-3 gap-6 pt-10 border-t border-canvas-line max-w-xl mx-auto">
+                <div>
+                    <p class="font-display text-3xl sm:text-4xl text-ink-950">8 Karya</p>
+                    <p class="text-xs text-ink-500 mt-1">Cetak, E-Book & Prosa</p>
                 </div>
-
-                <!-- Right Tactile Typographic Book Showcase -->
-                <div class="lg:col-span-5 flex justify-center">
-                    <div class="w-full max-w-sm bg-white rounded-[2rem] p-8 sm:p-9 border border-canvas-line shadow-airy space-y-6">
-                        <div class="flex items-center justify-between gap-2">
-                            <span class="text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-ochre-100 text-ochre-700">
-                                Terbaru • Buku Cetak
-                            </span>
-                            <span class="text-xs font-medium text-ink-500">Pustaka Imam Asy Syafii</span>
-                        </div>
-
-                        <!-- Typographic Book Cover -->
-                        <div class="flex justify-center py-3">
-                            <div class="w-44 sm:w-48 aspect-[2/3] typo-book shadow-book-soft bg-gradient-to-br from-[#FAF3E6] via-[#F4E6CE] to-[#EAD5B3] border border-[#DFC79E] p-6 pl-7 flex flex-col justify-between text-ink-950">
-                                <div class="space-y-1.5">
-                                    <span class="block text-[9px] uppercase tracking-[0.18em] text-ochre-700 font-bold">Pustaka Imam Asy Syafii</span>
-                                    <div class="w-8 h-[1.5px] bg-ochre-500/70"></div>
-                                </div>
-                                <div class="my-auto py-2">
-                                    <p class="font-serif text-xl sm:text-2xl font-bold leading-snug text-ink-950">
-                                        Capek Jadi Baik,<br>
-                                        <span class="italic font-semibold text-ochre-700">Takut Jadi Jahat</span>
-                                    </p>
-                                </div>
-                                <div class="pt-3 border-t border-ink-950/15 flex items-center justify-between">
-                                    <span class="font-display text-base text-ink-900">Ghifara Poetra</span>
-                                    <span class="text-[9px] uppercase tracking-widest text-ink-500">Cetak</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="text-center space-y-3">
-                            <p class="text-xs sm:text-sm text-ink-700 leading-relaxed">
-                                Untuk kamu yang sering merasa serba salah saat berusaha menjaga perasaan semua orang.
-                            </p>
-                            <a href="https://pesanbukucapek.netlify.app/" target="_blank" rel="noopener" class="w-full inline-flex items-center justify-center gap-2 bg-ink-900 hover:bg-ink-950 text-white font-semibold text-xs py-4 px-5 rounded-xl transition">
-                                <span>Amankan Buku Cetak Ini</span>
-                                <span>→</span>
-                            </a>
-                        </div>
-                    </div>
+                <div>
+                    <p class="font-display text-3xl sm:text-4xl text-ochre-600">5 Gratis</p>
+                    <p class="text-xs text-ink-500 mt-1">Langsung Bisa Kamu Baca</p>
+                </div>
+                <div>
+                    <p class="font-display text-3xl sm:text-4xl text-ink-950">100%</p>
+                    <p class="text-xs text-ink-500 mt-1">Akses Resmi & Praktis</p>
                 </div>
             </div>
         </div>
@@ -259,8 +208,8 @@
 
     <!-- INTERACTIVE SECTION: "Kompas Bacaanmu" -->
     <section id="fase-kamu" class="py-20 md:py-28">
-        <div class="max-w-5xl mx-auto px-6 sm:px-10">
-            <div class="bg-white border border-canvas-line rounded-[2rem] p-8 sm:p-12 shadow-airy">
+        <div class="max-w-5xl mx-auto px-4 sm:px-8 lg:px-10">
+            <div class="bg-white border border-canvas-line rounded-[2rem] p-6 sm:p-12 shadow-airy">
                 <div class="text-center max-w-2xl mx-auto space-y-3.5">
                     <span class="text-xs font-bold uppercase tracking-widest text-ochre-600">Kompas Bacaanmu</span>
                     <h2 class="font-display text-3xl sm:text-4xl text-ink-950">
@@ -312,14 +261,14 @@
         </div>
     </section>
 
-    <!-- SECTION 01: SPOTLIGHT BUKU CETAK (PUSTAKA IMAM ASY SYAFII) -->
+    <!-- SECTION 01: SPOTLIGHT BUKU CETAK (PRIMADONA — PUSTAKA IMAM ASY SYAFII) -->
     <section id="sorotan-cetak" class="py-10 md:py-16">
-        <div class="max-w-6xl mx-auto px-6 sm:px-10">
-            <div class="bg-gradient-to-br from-white via-canvas-cream/70 to-ochre-100/50 rounded-[2.25rem] p-8 sm:p-14 border border-canvas-line shadow-airy">
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="max-w-6xl mx-auto px-4 sm:px-8 lg:px-10">
+            <div class="bg-gradient-to-br from-white via-canvas-cream/70 to-ochre-100/50 rounded-[2.25rem] p-7 sm:p-14 border border-canvas-line shadow-airy">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
                     <!-- Typographic Book Cover -->
                     <div class="lg:col-span-4 flex justify-center">
-                        <div class="w-52 sm:w-60 aspect-[2/3] typo-book shadow-book-soft bg-gradient-to-br from-[#FAF3E6] via-[#F4E6CE] to-[#EAD5B3] border border-[#DFC79E] p-7 pl-8 flex flex-col justify-between text-ink-950">
+                        <div class="w-48 sm:w-60 aspect-[2/3] typo-book shadow-book-soft bg-gradient-to-br from-[#FAF3E6] via-[#F4E6CE] to-[#EAD5B3] border border-[#DFC79E] p-6 pl-7 sm:p-7 sm:pl-8 flex flex-col justify-between text-ink-950">
                             <div class="space-y-2">
                                 <span class="block text-[10px] uppercase tracking-[0.2em] text-ochre-700 font-bold">Pustaka Imam Asy Syafii</span>
                                 <div class="w-10 h-[1.5px] bg-ochre-500/70"></div>
@@ -377,11 +326,11 @@
         </div>
     </section>
 
-    <!-- SECTION 02: KATALOG LENGKAP SEMUA KARYA -->
+    <!-- SECTION 02: KATALOG LENGKAP SEMUA KARYA (2 Kolom di HP, 3-4 Kolom di Laptop/Desktop) -->
     <section id="katalog-lengkap" class="py-20 md:py-28">
-        <div class="max-w-6xl mx-auto px-6 sm:px-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-10">
             <!-- Section Header + Filter Bar -->
-            <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-14">
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-12 sm:mb-14">
                 <div class="space-y-3 max-w-xl">
                     <span class="text-xs font-bold uppercase tracking-widest text-ochre-600">Rak Koleksi Lengkap</span>
                     <h2 class="font-display text-4xl sm:text-5xl text-ink-950">
@@ -409,8 +358,8 @@
                 </div>
             </div>
 
-            <!-- Books Grid (Rendered Dynamically with Typographic Covers Only) -->
-            <div id="books-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
+            <!-- Books Grid: 2 Columns on Mobile (grid-cols-2), 3 on Laptop (lg:grid-cols-3), 4 on Wide Desktop (xl:grid-cols-4) -->
+            <div id="books-grid" class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3.5 sm:gap-6 lg:gap-7">
                 <!-- Cards injected via JavaScript -->
             </div>
         </div>
@@ -418,8 +367,8 @@
 
     <!-- SECTION 03: LEAD MAGNET / BACA GRATIS CALLOUT -->
     <section class="py-8 md:py-12">
-        <div class="max-w-6xl mx-auto px-6 sm:px-10">
-            <div class="bg-sage-100/75 border border-sage-200 rounded-[2rem] p-8 sm:p-12 flex flex-col lg:flex-row items-center justify-between gap-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-10">
+            <div class="bg-sage-100/75 border border-sage-200 rounded-[2rem] p-7 sm:p-12 flex flex-col lg:flex-row items-center justify-between gap-8">
                 <div class="space-y-3 max-w-2xl">
                     <span class="inline-block text-xs font-bold uppercase tracking-wider px-3.5 py-1 rounded-full bg-white border border-sage-200 text-sage-700">
                         Mulai dari yang Gratis
@@ -442,9 +391,9 @@
 
     <!-- SECTION 04: TENTANG PENULIS -->
     <section id="tentang-penulis" class="py-20 md:py-28">
-        <div class="max-w-6xl mx-auto px-6 sm:px-10">
-            <div class="bg-white border border-canvas-line rounded-[2rem] p-8 sm:p-14 shadow-airy">
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-10">
+            <div class="bg-white border border-canvas-line rounded-[2rem] p-7 sm:p-14 shadow-airy">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
                     <!-- Author Monogram / Emblem Card -->
                     <div class="lg:col-span-4 flex justify-center">
                         <div class="w-56 h-64 sm:w-64 sm:h-72 rounded-3xl bg-canvas-cream border border-canvas-line p-8 flex flex-col items-center justify-between text-center">
@@ -493,7 +442,7 @@
 
     <!-- FOOTER: Light & Airy -->
     <footer class="bg-canvas-cream text-ink-700 pt-16 pb-12 border-t border-canvas-line">
-        <div class="max-w-6xl mx-auto px-6 sm:px-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-10">
             <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 pb-10 border-b border-canvas-line">
                 <div class="space-y-2 max-w-md">
                     <span class="font-display text-3xl text-ink-950">Ghifara Poetra</span>
@@ -506,7 +455,7 @@
                     <a href="#katalog-lengkap" class="hover:text-ochre-600 transition">Semua Karya</a>
                     <a href="index.html" class="hover:text-ochre-600 transition">Portofolio Utama</a>
                     <a href="cv.html" class="hover:text-ochre-600 transition">Curriculum Vitae</a>
-                    <a href="https://wa.me/6285175132050" target="_blank" rel="noopener" class="text-ochre-700 hover:underline">Kontak WhatsApp</a>
+                    <a href="https://wa.me/6285175132050" target="_blank" rel="noopener" class="text-ochre-700 hover:underline">Kontak WA</a>
                 </div>
             </div>
             <div class="pt-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-[11px] text-ink-500">
@@ -517,9 +466,9 @@
     </footer>
 
     <!-- BOOK QUICK-PREVIEW MODAL -->
-    <div id="book-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-5 bg-ink-950/40 backdrop-blur-sm" onclick="if(event.target === this) closeBookModal()">
-        <div class="bg-white text-ink-950 rounded-[2rem] max-w-2xl w-full p-7 sm:p-10 shadow-2xl border border-canvas-line relative max-h-[90vh] overflow-y-auto">
-            <button onclick="closeBookModal()" aria-label="Tutup pratinjau" class="absolute top-6 right-6 w-9 h-9 rounded-full bg-canvas-cream hover:bg-ink-900 hover:text-white flex items-center justify-center text-sm font-bold transition">
+    <div id="book-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 sm:p-5 bg-ink-950/40 backdrop-blur-sm" onclick="if(event.target === this) closeBookModal()">
+        <div class="bg-white text-ink-950 rounded-[2rem] max-w-2xl w-full p-6 sm:p-10 shadow-2xl border border-canvas-line relative max-h-[90vh] overflow-y-auto">
+            <button onclick="closeBookModal()" aria-label="Tutup pratinjau" class="absolute top-5 right-5 sm:top-6 sm:right-6 w-9 h-9 rounded-full bg-canvas-cream hover:bg-ink-900 hover:text-white flex items-center justify-center text-sm font-bold transition">
                 ✕
             </button>
             <div id="modal-content" class="space-y-6">
@@ -530,7 +479,7 @@
 
     <script>
         // =========================================================================
-        // DATA KATALOG BUKU TERVERIFIKASI (Tanpa File Gambar Cover — Sampul Tipografi)
+        // DATA KATALOG BUKU TERVERIFIKASI (Sampul Tipografi Editorial)
         // =========================================================================
         const BOOKS_DATA = [
             {
@@ -543,9 +492,9 @@
                 kickerColor: 'text-ochre-700',
                 dividerColor: 'bg-ochre-500/70',
                 subtitle: 'Menemukan Kembali Keikhlasan Tanpa Kehilangan Batas Diri',
-                category: 'Buku Cetak • Segera Terbit',
+                category: 'Buku Cetak',
                 filterTags: ['premium'],
-                priceLabel: 'Pre-Order Buku Cetak',
+                priceLabel: 'Pre-Order',
                 isFree: false,
                 publisher: 'Pustaka Imam Asy Syafii',
                 problemHook: 'Untuk kamu yang lelah selalu mengiyakan ekspektasi orang lain, tapi takut dicap egois saat mulai menjaga diri.',
@@ -555,7 +504,7 @@
                     'Bahasa reflektif yang dekat dengan pergulatan sehari-hari',
                     'Panduan praktis menjaga batas diri secara syar’i'
                 ],
-                ctaText: 'Amankan Buku Cetak',
+                ctaText: 'Amankan Buku',
                 url: 'https://pesanbukucapek.netlify.app/'
             },
             {
@@ -568,7 +517,7 @@
                 kickerColor: 'text-sage-700',
                 dividerColor: 'bg-sage-700/60',
                 subtitle: 'Dari Sering Dikibulin Jadi Orang yang Didengerin dan Dihargai',
-                category: 'E-Book Praktis',
+                category: 'E-Book',
                 filterTags: ['premium'],
                 priceLabel: 'Rp29.000',
                 isFree: false,
@@ -580,7 +529,7 @@
                     'Belajar dari ketegasan komunikasi Nabi & para sahabat',
                     'Bisa langsung kamu praktikkan dalam kerja, bisnis, & keseharian'
                 ],
-                ctaText: 'Dapatkan E-Book (Rp29.000)',
+                ctaText: 'Dapatkan E-Book',
                 url: 'http://lynk.id/ghifarapoetra/wpq88n3nrnmg'
             },
             {
@@ -593,7 +542,7 @@
                 kickerColor: 'text-ochre-700',
                 dividerColor: 'bg-ochre-500/60',
                 subtitle: 'Tuntunan Runtut & Menenangkan untuk Muslimah',
-                category: 'E-Book Fikih & Penguatan',
+                category: 'E-Book',
                 filterTags: ['premium'],
                 priceLabel: 'Rp12.000',
                 isFree: false,
@@ -605,7 +554,7 @@
                     'Bahasa empatik yang menguatkan kondisi psikologis pembaca',
                     'Referensi praktis untuk muslimah dan keluarga pendamping'
                 ],
-                ctaText: 'Dapatkan E-Book (Rp12.000)',
+                ctaText: 'Dapatkan E-Book',
                 url: 'http://lynk.id/ghifarapoetra/y4w2689nyg1g'
             },
             {
@@ -618,7 +567,7 @@
                 kickerColor: 'text-ochre-700',
                 dividerColor: 'bg-ochre-500/65',
                 subtitle: 'Kumpulan Doa Sahih Memohon Kelapangan Rezeki & Ketenangan',
-                category: 'E-Book Doa • Gratis',
+                category: 'E-Book Doa',
                 filterTags: ['gratis'],
                 priceLabel: 'Gratis',
                 isFree: true,
@@ -630,7 +579,7 @@
                     'Dilengkapi teks Arab, terjemahan, dan konteks pengamalan',
                     '100% gratis untuk menemani wirid harianmu'
                 ],
-                ctaText: 'Unduh Gratis Sekarang',
+                ctaText: 'Unduh Gratis',
                 url: 'http://lynk.id/ghifarapoetra/mdgrwd8y3gm3'
             },
             {
@@ -643,7 +592,7 @@
                 kickerColor: 'text-ink-700',
                 dividerColor: 'bg-ink-700/50',
                 subtitle: 'Kumpulan Prosa Reflektif tentang Jeda & Keberanian Melangkah',
-                category: 'Kumpulan Prosa • Gratis',
+                category: 'Prosa',
                 filterTags: ['gratis', 'alam'],
                 priceLabel: 'Gratis',
                 isFree: true,
@@ -655,7 +604,7 @@
                     'Cocok dibaca saat pikiran sedang penuh dan butuh ketenangan',
                     'Akses baca gratis tanpa biaya'
                 ],
-                ctaText: 'Baca Gratis Sekarang',
+                ctaText: 'Baca Gratis',
                 url: 'http://lynk.id/ghifarapoetra/mXWGJ65'
             },
             {
@@ -668,7 +617,7 @@
                 kickerColor: 'text-ochre-700',
                 dividerColor: 'bg-ochre-500/60',
                 subtitle: 'Seri 1 — Langkah Awal Mengenal Alam & Rasa Ingin Tahu',
-                category: 'Memoar Alam • Gratis',
+                category: 'Memoar Alam',
                 filterTags: ['gratis', 'alam'],
                 priceLabel: 'Gratis',
                 isFree: true,
@@ -680,7 +629,7 @@
                     'Gaya bercerita visual yang membawamu ikut merasakan suasana gunung',
                     'Akses baca gratis'
                 ],
-                ctaText: 'Baca Gratis Sekarang',
+                ctaText: 'Baca Gratis',
                 url: 'http://lynk.id/ghifarapoetra/9Ma6mzM'
             },
             {
@@ -693,7 +642,7 @@
                 kickerColor: 'text-sage-700',
                 dividerColor: 'bg-sage-700/55',
                 subtitle: 'Seri 2 — Sekuel "Sunrise Pertama"',
-                category: 'Memoar Alam • Gratis',
+                category: 'Memoar Alam',
                 filterTags: ['gratis', 'alam'],
                 priceLabel: 'Gratis',
                 isFree: true,
@@ -705,7 +654,7 @@
                     'Refleksi tentang persahabatan, alam, dan makna pulang',
                     'Akses baca gratis'
                 ],
-                ctaText: 'Baca Gratis Sekarang',
+                ctaText: 'Baca Gratis',
                 url: 'http://lynk.id/ghifarapoetra/3Rv3YrM'
             },
             {
@@ -718,7 +667,7 @@
                 kickerColor: 'text-ink-700',
                 dividerColor: 'bg-ink-700/50',
                 subtitle: 'Kisah Nyata Bergelut dengan Derasnya Arus Sungai',
-                category: 'Kisah Petualangan • Gratis',
+                category: 'Petualangan',
                 filterTags: ['gratis', 'alam'],
                 priceLabel: 'Gratis',
                 isFree: true,
@@ -730,7 +679,7 @@
                     'Menggambarkan dinamika petualangan air secara hidup',
                     'Akses baca gratis'
                 ],
-                ctaText: 'Baca Gratis Sekarang',
+                ctaText: 'Baca Gratis',
                 url: 'http://lynk.id/ghifarapoetra/YqBGRbg'
             }
         ];
@@ -738,28 +687,28 @@
         // =========================================================================
         // HELPER: RENDER TYPOGRAPHIC COVER (100% Teks Editorial, Tanpa Gambar)
         // =========================================================================
-        function renderTypoCover(book, sizeClass = 'w-36 sm:w-40', titleSizeClass = 'text-lg sm:text-xl') {
+        function renderTypoCover(book, sizeClass = 'w-28 sm:w-36', titleSizeClass = 'text-base sm:text-lg') {
             return `
-                <div class="${sizeClass} aspect-[2/3] typo-book shadow-book-soft ${book.coverTheme} border p-5 pl-6 flex flex-col justify-between select-none">
-                    <div class="space-y-1.5">
-                        <span class="block text-[8px] uppercase tracking-[0.18em] ${book.kickerColor} font-bold leading-tight">${book.coverKicker}</span>
-                        <div class="w-6 h-[1.5px] ${book.dividerColor}"></div>
+                <div class="${sizeClass} aspect-[2/3] typo-book shadow-book-soft ${book.coverTheme} border p-3.5 pl-4 sm:p-5 sm:pl-6 flex flex-col justify-between select-none">
+                    <div class="space-y-1">
+                        <span class="block text-[8px] uppercase tracking-[0.15em] ${book.kickerColor} font-bold leading-tight">${book.coverKicker}</span>
+                        <div class="w-5 sm:w-6 h-[1.5px] ${book.dividerColor}"></div>
                     </div>
-                    <div class="my-auto py-2">
+                    <div class="my-auto py-1.5">
                         <h4 class="font-serif ${titleSizeClass} font-bold leading-snug text-ink-950">
                             ${book.coverTitle}
                         </h4>
                     </div>
-                    <div class="pt-2.5 border-t border-ink-950/12 flex items-center justify-between">
-                        <span class="font-display text-sm text-ink-900">Ghifara Poetra</span>
-                        <span class="text-[8px] uppercase tracking-widest text-ink-500">${book.coverTag}</span>
+                    <div class="pt-2 border-t border-ink-950/12 flex items-center justify-between">
+                        <span class="font-display text-xs sm:text-sm text-ink-900">Ghifara Poetra</span>
+                        <span class="text-[8px] uppercase tracking-wider text-ink-500">${book.coverTag}</span>
                     </div>
                 </div>
             `;
         }
 
         // =========================================================================
-        // RENDER KATALOG BUKU
+        // RENDER KATALOG BUKU (2 Kolom HP, 3-4 Kolom Desktop, Ukuran Font Tetap Nyaman)
         // =========================================================================
         function renderBooks(filter = 'all') {
             const grid = document.getElementById('books-grid');
@@ -768,44 +717,44 @@
                 : BOOKS_DATA.filter(book => book.filterTags.includes(filter));
 
             grid.innerHTML = filtered.map(book => `
-                <article class="book-card bg-white border border-canvas-line rounded-[1.75rem] p-7 sm:p-8 flex flex-col justify-between shadow-airy hover:border-ink-900/30 transition duration-300">
+                <article class="book-card bg-white border border-canvas-line rounded-2xl sm:rounded-[1.75rem] p-4 sm:p-6 lg:p-7 flex flex-col justify-between shadow-airy hover:border-ink-900/30 transition duration-300">
                     <div>
                         <!-- Top Badges -->
-                        <div class="flex items-center justify-between gap-2 mb-6">
-                            <span class="text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full ${book.isFree ? 'bg-sage-100 text-sage-700' : 'bg-ochre-100 text-ochre-700'}">
+                        <div class="flex flex-wrap items-center justify-between gap-1.5 mb-4 sm:mb-5">
+                            <span class="text-[11px] font-bold uppercase tracking-wider px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full ${book.isFree ? 'bg-sage-100 text-sage-700' : 'bg-ochre-100 text-ochre-700'}">
                                 ${book.category}
                             </span>
-                            <span class="text-xs font-bold ${book.isFree ? 'text-sage-700 bg-canvas-cream px-2.5 py-1 rounded-lg border border-canvas-line' : 'text-ink-950'}">
+                            <span class="text-xs font-bold ${book.isFree ? 'text-sage-700 bg-canvas-cream px-2 py-0.5 rounded-md border border-canvas-line' : 'text-ink-950'}">
                                 ${book.priceLabel}
                             </span>
                         </div>
 
                         <!-- Typographic Book Cover Display -->
-                        <div class="flex justify-center py-6 mb-6 bg-canvas-light rounded-2xl border border-canvas-line/70 cursor-pointer" onclick="openBookModal('${book.id}')">
+                        <div class="flex justify-center py-4 sm:py-6 mb-4 sm:mb-5 bg-canvas-light rounded-xl sm:rounded-2xl border border-canvas-line/70 cursor-pointer" onclick="openBookModal('${book.id}')">
                             ${renderTypoCover(book)}
                         </div>
 
-                        <!-- Title & Hook -->
-                        <div class="space-y-3">
-                            <h3 class="font-serif text-2xl font-bold text-ink-950 leading-snug">
+                        <!-- Title & Hook (Ukuran tulisan tetap nyaman dibaca di HP maupun Laptop) -->
+                        <div class="space-y-2.5">
+                            <h3 class="font-serif text-lg sm:text-xl font-bold text-ink-950 leading-snug">
                                 ${book.title}
                             </h3>
                             <p class="text-xs font-semibold text-ochre-700 leading-relaxed">
                                 ${book.problemHook}
                             </p>
-                            <p class="text-xs sm:text-sm text-ink-700 leading-[1.75] line-clamp-3">
+                            <p class="text-xs sm:text-sm text-ink-700 leading-relaxed line-clamp-3">
                                 ${book.synopsis}
                             </p>
                         </div>
                     </div>
 
-                    <!-- Actions -->
-                    <div class="pt-6 mt-6 border-t border-canvas-line/80 flex items-center gap-3">
-                        <a href="${book.url}" target="_blank" rel="noopener" class="flex-1 inline-flex items-center justify-center gap-1.5 ${book.isFree ? 'bg-ink-900 hover:bg-ink-950 text-white' : 'bg-ochre-500 hover:bg-ochre-600 text-white'} font-semibold text-xs py-3.5 px-4 rounded-xl transition text-center">
+                    <!-- Actions (Bertumpuk rapi di HP 2-kolom, sejajar di layar lebih lebar) -->
+                    <div class="pt-4 sm:pt-5 mt-4 sm:mt-5 border-t border-canvas-line/80 flex flex-col sm:flex-row items-stretch sm:items-center gap-2">
+                        <a href="${book.url}" target="_blank" rel="noopener" class="flex-1 inline-flex items-center justify-center gap-1.5 ${book.isFree ? 'bg-ink-900 hover:bg-ink-950 text-white' : 'bg-ochre-500 hover:bg-ochre-600 text-white'} font-semibold text-xs py-3 px-3 rounded-xl transition text-center">
                             <span>${book.ctaText}</span>
                             <span>↗</span>
                         </a>
-                        <button onclick="openBookModal('${book.id}')" title="Intip Gambaran Isi" class="px-4 py-3.5 rounded-xl bg-canvas-light border border-canvas-line hover:border-ink-900 text-ink-900 text-xs font-semibold transition">
+                        <button onclick="openBookModal('${book.id}')" title="Intip Gambaran Isi" class="px-3.5 py-3 rounded-xl bg-canvas-light border border-canvas-line hover:border-ink-900 text-ink-900 text-xs font-semibold transition text-center">
                             Sinopsis
                         </button>
                     </div>
